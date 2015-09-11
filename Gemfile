@@ -3,6 +3,8 @@ ruby '2.2.1'
 
 #gem 'passenger'
 
+gem 'bundler'
+
 gem 'carrierwave'
 
 gem 'ruby-opencv'
