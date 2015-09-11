@@ -1,0 +1,256 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+html,
+body {
+	margin:0;
+	padding: 0;
+	height:100%;
+    background-size: cover;
+    background-position: right -300px top;
+}
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Box Shadow Outset */
+.hvr-box-shadow-outset {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.document{
+  width: 250px;
+  height: 330px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  background-color: white;
+  margin: 1%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-top: 0;
+}
+.document a:hover {
+  color:#796666;
+}
+
+.document a:visited {
+  color:#796666;
+}
+
+.document a:active{
+  color:#796666;
+}
+
+.document a:link{
+  text-decoration: none;
+  color:#796666;
+}
+
+.image{
+  margin-top: 2%;	
+}
+
+.imageBorder{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  height: 400px;
+  width: 300px;
+}
+.signatureBorder{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  width: 626px;
+  height: 86px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.titles{
+ font-size: 20px;
+ text-decoration: none;
+}
+
+.titles:hover,.titles:focus,.titles:active{
+ text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+.panele {
+    margin-left: 5%;
+    min-width: 25%;
+    padding-top: 1%;
+    padding-left: 2%;
+    background: none;
+    background-color: transparent;
+}
+
+.panele ul {
+    list-style: none;
+}
+
+.panele li {
+	list-style: none;
+    margin-bottom: 5px;
+}
+
+.panele a:hover {
+  color:#796666;
+}
+
+.panele a:visited {
+  color:#796666;
+}
+
+.panele a:active{
+  color:#796666;
+}
+
+.panele a:link{
+  text-decoration: none;
+  color:#796666;
+}
+
+.menuElement{
+	margin-: 1%;
+}
+#footer {
+	background-color: #F8F8F8;
+    color: #796666;
+    padding: 1% 5%;
+	width:100%;
+	max-height:130px;
+	position:absolute;
+	bottom:0;    
+}
+
+.header{
+	background-color: black;
+	color:white;
+	width:100%;
+	max-height:80px;
+}
+.add{
+  height: 40px;
+}
+.signatures{
+  padding: 5%
+}

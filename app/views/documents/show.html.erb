@@ -1,0 +1,23 @@
+<% title @document.name %>
+<div class="container">
+  <div class="row ">
+      <div class="col-md-4">
+        <div class="row imageBorder">
+          <%=link_to image_tag(@document.image_url,size:"300x400"),@document if @document.image? %>
+        </div>
+        <p>
+          <%= link_to "Remove Document", @document, :confirm => 'Are you sure?', :method => :delete %> |
+          <%= link_to "View Documents", documents_path %>
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-7 signatures">
+          <% for signatures in @document.signatures %>
+            <div class="signature row signatureBorder">
+              <%= image_tag(signatures.image_url,size:"626x86")if signatures.image? %>
+            </div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+

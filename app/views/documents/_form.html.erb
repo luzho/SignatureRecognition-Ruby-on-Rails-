@@ -1,0 +1,18 @@
+<%= form_for @document do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.file_field :image %>
+  </p>
+  <p>
+    <%= f.label :remote_image_url, "or image URL" %><br />
+    <%= f.text_field :remote_image_url %>
+  </p>
+  <p>
+    <%= f.label :number, "How many signatures?"%>
+    <%= number_field_tag "number" %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
